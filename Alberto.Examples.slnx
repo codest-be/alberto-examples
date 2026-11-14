@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/apps/">
+    <Project Path="apps/Alberto.AppHost/Alberto.AppHost.csproj" />
+    <Project Path="apps/Alberto.Examples.Shared/Alberto.Examples.Shared.csproj" />
+    <Project Path="apps/ServiceDefaults/ServiceDefaults.csproj" />
+    <Project Path="apps/Alberto.Orders/Alberto.Orders/Alberto.Orders.csproj" />
+    <Project Path="apps/Alberto.Orders/Alberto.Orders.Api/Alberto.Orders.Api.csproj" />
+    <Project Path="apps/Alberto.Orders/Alberto.Orders.Migrations/Alberto.Orders.Migrations.csproj" />
+    <Project Path="apps/Alberto.Payments/Alberto.Payments/Alberto.Payments.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Alberto.Examples.Tests/Alberto.Examples.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,48 @@
+version: 2
+
+# The Alberto group is the point of this file: these examples consume Alberto from nuget.org, so
+# a release that breaks them shows up here as a red Dependabot PR rather than nowhere.
+updates:
+  - package-ecosystem: nuget
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    ignore:
+      - dependency-name: Microsoft.*
+        update-types: [version-update:semver-major]
+      - dependency-name: Npgsql*
+        update-types: [version-update:semver-major]
+    groups:
+      alberto:
+        patterns: [Alberto*]
+      hotchocolate:
+        patterns: [HotChocolate*]
+        update-types: [minor, patch]
+      aspire:
+        patterns: [Aspire.*]
+        update-types: [minor, patch]
+      opentelemetry:
+        patterns: [OpenTelemetry*]
+        update-types: [minor, patch]
+      dotnet-runtime:
+        patterns: [Microsoft.*, Npgsql*]
+        update-types: [minor, patch]
+      test:
+        patterns: [xunit*, FluentAssertions, coverlet*]
+        update-types: [minor, patch]
+
+  - package-ecosystem: npm
+    directory: /tests/Alberto.Orders.LoadTests
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      npm:
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday

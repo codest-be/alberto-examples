@@ -1,0 +1,34 @@
+bin/
+obj/
+/packages/
+artifacts/
+nupkg/
+*.nupkg
+*.snupkg
+riderModule.iml
+/_ReSharper.Caches/
+.idea/
+# serena tool cache
+.serena/
+
+TestResults/
+BenchmarkDotNet.Artifacts/
+
+# Scratch output of the benchmark compare tool. Baselines and history live under
+# benchmarks/results/ and are committed deliberately; these two are per-run.
+candidate.json
+delta.md
+*.sln.DotSettings.user
+
+# Node / React admin dashboard
+node_modules/
+dist/
+
+# macOS Finder metadata
+.DS_Store
+
+# Process artifacts: specs, implementation plans and subagent run ledgers.
+# Kept outside the repository so it holds only code and documentation.
+.superpowers/
+docs/superpowers/
+.claire-tmp/
