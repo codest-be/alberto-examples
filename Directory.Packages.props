@@ -6,12 +6,12 @@
   <ItemGroup>
     <!-- Alberto, from nuget.org. Dependabot bumps these; that bump is what tells us an Alberto
          release broke the examples, now that they no longer build against its source. -->
-    <PackageVersion Include="Alberto" Version="0.8.0" />
-    <PackageVersion Include="Alberto.Commands" Version="0.8.0" />
-    <PackageVersion Include="Alberto.EntityFramework" Version="0.8.0" />
-    <PackageVersion Include="Alberto.Postgres" Version="0.8.0" />
-    <PackageVersion Include="Alberto.Telemetry" Version="0.8.0" />
-    <PackageVersion Include="Alberto.Testing" Version="0.8.0" />
+    <PackageVersion Include="Alberto" Version="0.12.0" />
+    <PackageVersion Include="Alberto.Commands" Version="0.12.0" />
+    <PackageVersion Include="Alberto.EntityFramework" Version="0.12.0" />
+    <PackageVersion Include="Alberto.Postgres" Version="0.12.0" />
+    <PackageVersion Include="Alberto.Telemetry" Version="0.12.0" />
+    <PackageVersion Include="Alberto.Testing" Version="0.12.0" />
   </ItemGroup>
   <ItemGroup>
     <PackageVersion Include="Aspire.Hosting.AppHost" Version="13.6.5" />
